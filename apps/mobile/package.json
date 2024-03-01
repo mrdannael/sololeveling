@@ -1,0 +1,48 @@
+{
+  "name": "@sololeveling/mobile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "expo start --port 3002",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build": "expo export --output-dir ./build --platform all",
+    "eas-build-pre-install": "npm install --global yarn@1.22.19",
+    "eas-build-post-install": "yarn run -w build:mobile",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "expo": "~50.0.8",
+    "expo-status-bar": "~1.11.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.5",
+    "react-native-web": "~0.19.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@sololeveling/eslint-config": "*",
+    "@sololeveling/typescript-config": "*",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.4.3",
+    "@types/jest": "^29.5.12",
+    "@types/react": "~18.2.61",
+    "@types/react-native": "~0.73.0",
+    "@types/react-test-renderer": "^18.0.7",
+    "babel-plugin-inline-dotenv": "^1.7.0",
+    "babel-plugin-root-import": "^6.6.0",
+    "jest": "^29.7.0",
+    "react-test-renderer": "^18.2.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@sololeveling/eslint-config/react"
+    ]
+  }
+}

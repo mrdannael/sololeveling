@@ -1,0 +1,48 @@
+{
+  "name": "sololeveling",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test --",
+    "clean": "rimraf {apps,packages}/**/{node_modules,dist,.next,.turbo} -g && rimraf node_modules",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@commitlint/cz-commitlint": "^19.0.3",
+    "@sololeveling/eslint-config": "*",
+    "@sololeveling/typescript-config": "*",
+    "commitizen": "^4.3.0",
+    "husky": "9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
+    "turbo": "1.12.4",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,json}": [
+      "prettier -w"
+    ]
+  }
+}

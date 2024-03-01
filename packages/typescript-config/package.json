@@ -1,0 +1,14 @@
+{
+  "name": "@sololeveling/typescript-config",
+  "version": "0.0.0",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "nest.json",
+    "expo.json"
+  ]
+}

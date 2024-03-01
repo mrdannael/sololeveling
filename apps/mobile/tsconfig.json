@@ -1,0 +1,9 @@
+{
+  "extends": "@sololeveling/typescript-config/expo.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  }
+}
