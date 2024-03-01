@@ -1,24 +1,42 @@
 ## Sololeveling
 
-This monorepo uses Turbo under the hood.
+[![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,nextjs,react,vitest,yarn)](https://mrdannael.github.com)
 
-Developed with
+This monorepo uses [Turbo](https://turbo.build/) under the hood.
+
+### Local environment's runtimes and tools
+
+```
 nodejs 20.11.1
 yarn 1.22.19
+```
 
-This project is built on top of:
-NextJS - Web Application
-NestJS - API
-React-Native - Mobile Application
+### Apps
+
+`NextJS` Web Application
+
+`NestJS` - API
+
+`React-Native` - Mobile Application
+
+### Development
 
 To run this project install dependencies with Yarn
-`yarn install`
+
+```shell
+yarn install
+```
 
 Then run
-`turbo dev`
+
+```shell
+turbo dev
+```
 
 All development environments should start.
 
 Web app is accessible via `http://localhost:3000`
+
 API is accessible via `http://localhost:3001`
+
 Mobile app is accessible via `http://localhost:3002`
