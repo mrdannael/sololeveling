@@ -2,6 +2,8 @@
 
 [![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,nextjs,react,vitest,yarn)](https://mrdannael.github.com)
 
+Application which will help you keep track and motivate to hone your skills.
+
 This monorepo uses [Turbo](https://turbo.build/) under the hood.
 
 ### Local environment's runtimes and tools
@@ -40,3 +42,4 @@ Web app is accessible via `http://localhost:3000`
 API is accessible via `http://localhost:3001`
 
 Mobile app is accessible via `http://localhost:3002`
+
