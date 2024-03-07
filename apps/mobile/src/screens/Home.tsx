@@ -5,7 +5,7 @@ import { StatusBar } from "expo-status-bar";
 export function Home() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <Text>Sololeveling</Text>
       <StatusBar style="auto" />
     </View>
   );
