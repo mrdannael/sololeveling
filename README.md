@@ -1,5 +1,7 @@
 ## Sololeveling
 
+This app will be hosted in the future.
+
 [![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,nextjs,react,vitest,yarn)](https://mrdannael.github.com)
 
 Application which will help you keep track and motivate to hone your skills.
