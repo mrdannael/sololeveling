@@ -1,4 +1,4 @@
-export default function LoginPage() {
+export default function SignInPage() {
   return (
     <form action="api/login">
       <input type="email" name="email" placeholder="Email" required />
